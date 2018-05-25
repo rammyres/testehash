@@ -48,10 +48,13 @@ public class Main {
                     System.out.printf("String: %s | Hash: %s\n", args[i], sha256(args[i]));
             } else if(args.length >= 2 && Objects.equals(args[0], "-sl")){
                 StringBuilder c = new StringBuilder();
-                for(int i = 1; i<args.length; i++) {
-                    c.append(" ");
-                    c.append(args[i]);
-                }
+                if(args.length-1==1)
+                    c.append(args[1]);
+                else
+                    for(int i = 1; i<args.length; i++) {
+                        c.append(" ");
+                        c.append(args[i]);
+                    }
                 System.out.printf("String: %s | Hash: %s\n", c.toString(), sha256(c.toString()));
 
             } else {
