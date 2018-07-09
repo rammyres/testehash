@@ -4,7 +4,7 @@ import java.security.MessageDigest; //Funções criptográficas
 import java.util.Objects; //Funções de comparação de conteúdo
 import java.util.concurrent.ThreadLocalRandom; //Criação de números aleatórios
 
-public class Main {
+public class  Main {
 
     //A função sha256 retorna um hash sha256 da string base, que é recebida como parâmetro
     private static String sha256(String base) {
